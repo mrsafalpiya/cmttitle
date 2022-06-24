@@ -65,7 +65,7 @@ fill_cmt_title(char *str, const char *title, unsigned int title_len,
 	right_space = left_space;
 	/* Check for the odd remaining space */
 	if ((2 + left_space + title_len + right_space + 1) != text_width)
-		strcat(str, " ");
+		right_space++;
 
 	for (i = 0; i < left_space; i++) {
 		strcat(str, " ");
